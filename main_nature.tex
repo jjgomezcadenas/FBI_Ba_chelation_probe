@@ -41,6 +41,7 @@
 \usepackage{natbib}
 \usepackage[backref=none,bookmarksnumbered=true,bookmarks=true,bookmarksopen=true,colorlinks=true,
 citecolor=blue,linkcolor=blue,anchorcolor=green,urlcolor=blue,unicode=false]{hyperref}
+\usepackage{verbatim}
 
 %******************************* For corrections ===================
 \usepackage{ulem}[normalem] %Whatch out, places underlining in Journal references. Use \normalem before references to deactivate this 
@@ -80,60 +81,379 @@ citecolor=blue,linkcolor=blue,anchorcolor=green,urlcolor=blue,unicode=false]{hyp
 \input{NextDefs.tex}
 
 \begin{document}
-\title{ \Bapp\ ion trapping by organic monolayer: towards an ultra-low background neutrinoless double beta decay detector}
+\title{ \Bapp\ ion trapping by organic submonolayer: towards an ultra-low background neutrinoless double beta decay detector}
 
-\author{Pablo Herrero-Gómez}
-   \affiliation{Centro de F\'{\i}sica de Materiales (CSIC/UPV-EHU), 20018 Donostia-San Sebasti\'an, Spain}
-   \affiliation{Donostia International Physics Center DIPC, 20018 Donostia-San Sebasti\'an, Spain}
-\author{Jan Patrick Calupitan}
-   \affiliation{Centro de F\'{\i}sica de Materiales (CSIC/UPV-EHU), 20018 Donostia-San Sebasti\'an, Spain}
-\author{Maxim Ilyn}
-   \affiliation{Centro de F\'{\i}sica de Materiales (CSIC/UPV-EHU), 20018 Donostia-San Sebasti\'an, Spain}
-\author{Alejandro Berdonces-Layunta}
-   \affiliation{Centro de F\'{\i}sica de Materiales (CSIC/UPV-EHU), 20018 Donostia-San Sebasti\'an, Spain}
-   \affiliation{Donostia International Physics Center DIPC, 20018 Donostia-San Sebasti\'an, Spain}
-\author{Tao Wang}
-   \affiliation{Centro de F\'{\i}sica de Materiales (CSIC/UPV-EHU), 20018 Donostia-San Sebasti\'an, Spain}
-   \affiliation{Donostia International Physics Center DIPC, 20018 Donostia-San Sebasti\'an, Spain}
-\author{Dimas G. de Oteyza}
-   \affiliation{Centro de F\'{\i}sica de Materiales (CSIC/UPV-EHU), 20018 Donostia-San Sebasti\'an, Spain}
-   \affiliation{Donostia International Physics Center DIPC, 20018 Donostia-San Sebasti\'an, Spain}
-   \affiliation{Ikerbasque, Basque Foundation for Science, 48011 Bilbao, Spain}
-\author{Martina Corso}
-   \affiliation{Centro de F\'{\i}sica de Materiales (CSIC/UPV-EHU), 20018 Donostia-San Sebasti\'an, Spain}
-   \affiliation{Donostia International Physics Center DIPC, 20018 Donostia-San Sebasti\'an, Spain}
-   \author{Ruben González-Moreno}
-     \affiliation{Donostia International Physics Center DIPC, 20018 Donostia-San Sebasti\'an, Spain}
-  \author{Iv\'an Rivilla}
-    \affiliation{Donostia International Physics Center DIPC, 20018 Donostia-San Sebasti\'an, Spain}
-    \affiliation{Ikerbasque, Basque Foundation for Science, 48011 Bilbao, Spain}
- \author{Borja Aparicio}
-    \affiliation{Department of Organic Chemistry I, University of the Basque Country (UPV/EHU),20018 Donostia-San Sebasti\'an, Spain}
-\author{Ane I. Aranburu}
-    \affiliation{Department of Applied Chemistry, Universidad del Pais Vasco (UPV/EHU), 20018 Donostia-San Sebasti\'an, Spain}
-\author{Zoraida Freixa}
-    \affiliation{Department of Applied Chemistry, Universidad del Pais Vasco (UPV/EHU), 20018 Donostia-San Sebasti\'an, Spain}
-   \affiliation{Ikerbasque, Basque Foundation for Science, 48011 Bilbao, Spain}
-\author{Francesc Monrabal}
-   \affiliation{Donostia International Physics Center DIPC, 20018 Donostia-San Sebasti\'an, Spain}
-  \affiliation{Ikerbasque, Basque Foundation for Science, 48011 Bilbao, Spain}
-\author{Fernando P. Coss\'io}
-  \affiliation{Donostia International Physics Center DIPC, 20018 Donostia-San Sebasti\'an, Spain}
- \affiliation{Department of Organic Chemistry I, University of the Basque Country (UPV/EHU),20018 Donostia-San Sebasti\'an, Spain}
-\author{Juan J. G\'omez-Cadenas}
-    \affiliation{Donostia International Physics Center DIPC, 20018 Donostia-San Sebasti\'an, Spain}
-    \affiliation{Ikerbasque, Basque Foundation for Science, 48011 Bilbao, Spain}
-\author{Celia Rogero}
-   \affiliation{Centro de F\'{\i}sica de Materiales (CSIC/UPV-EHU), 20018 Donostia-San Sebasti\'an, Spain}
-   \affiliation{Donostia International Physics Center DIPC, 20018 Donostia-San Sebasti\'an, Spain}
-  
-   \author{NEXT Collaboration}
+\author{P.~Herrero-G\'omez}
+\affiliation{Centro de F\'isica de Materiales (CSIC-UPV/EHU), San Sebasti\'an / Donostia, E-20018, Spain}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{J.P.~Calupitan}
+\affiliation{Centro de F\'isica de Materiales (CSIC-UPV/EHU), San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{M.~Ilyn}
+\affiliation{Centro de F\'isica de Materiales (CSIC-UPV/EHU), San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{A.~Berdonces-Layunta}
+\affiliation{Centro de F\'isica de Materiales (CSIC-UPV/EHU), San Sebasti\'an / Donostia, E-20018, Spain}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{T.~Wang}
+\affiliation{Centro de F\'isica de Materiales (CSIC-UPV/EHU), San Sebasti\'an / Donostia, E-20018, Spain}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{D.~G. de Oteyza}
+\affiliation{Centro de F\'isica de Materiales (CSIC-UPV/EHU), San Sebasti\'an / Donostia, E-20018, Spain}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{M.~Corso}
+\affiliation{Centro de F\'isica de Materiales (CSIC-UPV/EHU), San Sebasti\'an / Donostia, E-20018, Spain}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{R.~Gonz\'alez-Moreno}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{I.~Rivilla}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+\affiliation{Ikerbasque, Basque Foundation for Science, Bilbao, E-48009, Spain}
+%
+\author{B.~Aparicio}
+\affiliation{Department of Organic Chemistry I, University of the Basque Country (UPV/EHU), Centro de Innovaci\'on en Qu\'imica Avanzada (ORFEO-CINQA), San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{A.I.~Aranburu}
+\affiliation{Department of Applied Chemistry, University of the Basque Country (UPV/EHU), San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{Z.~Freixa}
+\affiliation{Department of Applied Chemistry, University of the Basque Country (UPV/EHU), San Sebasti\'an / Donostia, E-20018, Spain}
+\affiliation{Ikerbasque, Basque Foundation for Science, Bilbao, E-48009, Spain}
+%
+\author{F.~Monrabal}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+\affiliation{Ikerbasque, Basque Foundation for Science, Bilbao, E-48009, Spain}
+%
+\author{F.P.~Coss\'io}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+\affiliation{Department of Organic Chemistry I, University of the Basque Country (UPV/EHU), Centro de Innovaci\'on en Qu\'imica Avanzada (ORFEO-CINQA), San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{J.J.~G\'omez-Cadenas}
+\thanks{NEXT Co-spokesperson.}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+\affiliation{Ikerbasque, Basque Foundation for Science, Bilbao, E-48009, Spain}
+%
+\author{C.~Rogero}
+\thanks{Corresponding Author.}
+\affiliation{Centro de F\'isica de Materiales (CSIC-UPV/EHU), San Sebasti\'an / Donostia, E-20018, Spain}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+
+%
+\author{C.~Adams}
+\affiliation{Argonne National Laboratory, Argonne, IL 60439, USA}
+%
+\author{H.~Almaz\'an}
+\affiliation{Department of Physics, Harvard University, Cambridge, MA 02138, USA}
+%
+\author{V.~\'Alvarez}
+\affiliation{Instituto de Instrumentaci\'on para Imagen Molecular I3M (CSIC-UPV), Valencia, E-46022, Spain}
+%
+\author{L.~Arazi}
+\affiliation{Unit of Nuclear Engineering, Faculty of Engineering Sciences, Ben-Gurion University of the Negev, Beer-Sheva, 8410501, Israel}
+%
+\author{I.J.~Arnquist}
+\affiliation{Pacific Northwest National Laboratory (PNNL), Richland, WA 99352, USA}
+%
+\author{S.~Ayet}
+\affiliation{II. Physikalisches Institut, Justus-Liebig-Universitat Giessen, Giessen, Germany}
+%
+\author{C.D.R.~Azevedo}
+\affiliation{Institute of Nanostructures, Nanomodelling and Nanofabrication (i3N), Universidade de Aveiro, Campus de Santiago, Aveiro, 3810-193, Portugal}
+%
+\author{K.~Bailey}
+\affiliation{Argonne National Laboratory, Argonne, IL 60439, USA}
+%
+\author{F.~Ballester}
+\affiliation{Instituto de Instrumentaci\'on para Imagen Molecular I3M (CSIC-UPV), Valencia, E-46022, Spain}
+%
+\author{J.M.~Benlloch-Rodr\'{i}guez}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{F.I.G.M.~Borges}
+\affiliation{LIP, Department of Physics, University of Coimbra, Coimbra, 3004-516, Portugal}
+%
+\author{S.~Bounasser}
+\affiliation{Department of Physics, Harvard University, Cambridge, MA 02138, USA}
+%
+\author{N.~Byrnes}
+\affiliation{Department of Physics, University of Texas at Arlington, Arlington, TX 76019, USA}
+%
+\author{S.~C\'arcel}
+\affiliation{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia, Paterna, E-46980, Spain}
+%
+\author{J.V.~Carri\'on}
+\affiliation{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia, Paterna, E-46980, Spain}
+%
+\author{S.~Cebri\'an}
+\affiliation{Centro de Astropart\'iculas y F\'isica de Altas Energ\'ias (CAPA), Universidad de Zaragoza, Zaragoza, E-50009, Spain}
+%
+\author{E.~Church}
+\affiliation{Pacific Northwest National Laboratory (PNNL), Richland, WA 99352, USA}
+%
+\author{C.A.N.~Conde}
+\affiliation{LIP, Department of Physics, University of Coimbra, Coimbra, 3004-516, Portugal}
+%
+\author{T.~Contreras}
+\affiliation{Department of Physics, Harvard University, Cambridge, MA 02138, USA}
+%
+\author{A.A.~Denisenko}
+\affiliation{Department of Chemistry and Biochemistry, University of Texas at Arlington, Arlington, TX 76019, USA}
+%
+\author{G.~D\'iaz}
+\affiliation{Instituto Gallego de F\'isica de Altas Energ\'ias, Univ.\ de Santiago de Compostela, Campus sur, Santiago de Compostela, E-15782, Spain}
+%
+\author{J.~D\'iaz}
+\affiliation{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia, Paterna, E-46980, Spain}
+%
+\author{T.~Dickel}
+\affiliation{II. Physikalisches Institut, Justus-Liebig-Universitat Giessen, Giessen, Germany}
+%
+\author{J.~Escada}
+\affiliation{LIP, Department of Physics, University of Coimbra, Coimbra, 3004-516, Portugal}
+%
+\author{R.~Esteve}
+\affiliation{Instituto de Instrumentaci\'on para Imagen Molecular I3M (CSIC-UPV), Valencia, E-46022, Spain}
+%
+\author{A.~Fahs}
+\affiliation{Department of Physics, Harvard University, Cambridge, MA 02138, USA}
+%
+\author{R.~Felkai}
+\affiliation{Unit of Nuclear Engineering, Faculty of Engineering Sciences, Ben-Gurion University of the Negev, Beer-Sheva, 8410501, Israel}
+%
+\author{L.M.P.~Fernandes}
+\affiliation{LIBPhys, Physics Department, University of Coimbra, Coimbra, 3004-516, Portugal}
+%
+\author{P.~Ferrario}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+\affiliation{Ikerbasque, Basque Foundation for Science, Bilbao, E-48009, Spain}
+%
+\author{A.L.~Ferreira}
+\affiliation{Institute of Nanostructures, Nanomodelling and Nanofabrication (i3N), Universidade de Aveiro, Campus de Santiago, Aveiro, 3810-193, Portugal}
+%
+\author{F.W.~Foss}
+\affiliation{Department of Chemistry and Biochemistry, University of Texas at Arlington, Arlington, TX 76019, USA}
+%
+\author{E.D.C.~Freitas}
+\affiliation{LIBPhys, Physics Department, University of Coimbra, Coimbra, 3004-516, Portugal}
+%
+\author{J.~Generowicz}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{A.~Goldschmidt}
+\affiliation{Lawrence Berkeley National Laboratory (LBNL), Berkeley, CA 94720, USA}
+%
+\author{D.~Gonz\'alez-D\'iaz}
+\affiliation{Instituto Gallego de F\'isica de Altas Energ\'ias, Univ.\ de Santiago de Compostela, Campus sur, Santiago de Compostela, E-15782, Spain}
+%
+\author{R.~Guenette}
+\affiliation{Department of Physics, Harvard University, Cambridge, MA 02138, USA}
+%
+\author{R.M.~Guti\'errez}
+\affiliation{Centro de Investigaci\'on en Ciencias B\'asicas y Aplicadas, Universidad Antonio Nari\~no, Sede Circunvalar, Bogot\'a, Colombia}
+%
+\author{J.~Haefner}
+\affiliation{Department of Physics, Harvard University, Cambridge, MA 02138, USA}
+%
+\author{K.~Hafidi}
+\affiliation{Argonne National Laboratory, Argonne, IL 60439, USA}
+%
+\author{J.~Hauptman}
+\affiliation{Department of Physics and Astronomy, Iowa State University, Ames, IA 50011-3160, USA}
+%
+\author{C.A.O.~Henriques}
+\affiliation{LIBPhys, Physics Department, University of Coimbra, Coimbra, 3004-516, Portugal}
+%
+\author{J.A.~Hernando~Morata}
+\affiliation{Instituto Gallego de F\'isica de Altas Energ\'ias, Univ.\ de Santiago de Compostela, Campus sur, Santiago de Compostela, E-15782, Spain}
+%
+\author{V.~Herrero}
+\affiliation{Instituto de Instrumentaci\'on para Imagen Molecular I3M (CSIC-UPV), Valencia, E-46022, Spain}
+%
+\author{J.~Ho}
+\affiliation{Department of Physics, Harvard University, Cambridge, MA 02138, USA}
+%
+\author{Y.~Ifergan}
+\affiliation{Unit of Nuclear Engineering, Faculty of Engineering Sciences, Ben-Gurion University of the Negev, Beer-Sheva, 8410501, Israel}
+%
+\author{B.J.P.~Jones}
+\affiliation{Department of Physics, University of Texas at Arlington, Arlington, TX 76019, USA}
+%
+\author{M.~Kekic}
+\affiliation{Instituto Gallego de F\'isica de Altas Energ\'ias, Univ.\ de Santiago de Compostela, Campus sur, Santiago de Compostela, E-15782, Spain}
+%
+\author{L.~Labarga}
+\affiliation{Departamento de F\'isica Te\'orica, Universidad Aut\'onoma de Madrid, Campus de Cantoblanco, Madrid, E-28049, Spain}
+%
+\author{A.~Laing}
+\affiliation{Department of Physics, University of Texas at Arlington, Arlington, TX 76019, USA}
+%
+\author{L.~Larizgoitia}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{P.~Lebrun}
+\affiliation{Fermi National Accelerator Laboratory, Batavia, IL 60510, USA}
+%
+\author{D.~Lopez Gutierrez}
+\affiliation{Department of Physics, Harvard University, Cambridge, MA 02138, USA}
+%
+\author{N.~L\'opez-March}
+\affiliation{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia, Paterna, E-46980, Spain}
+%
+\author{M.~Losada}
+\affiliation{Centro de Investigaci\'on en Ciencias B\'asicas y Aplicadas, Universidad Antonio Nari\~no, Sede Circunvalar, Bogot\'a, Colombia}
+%
+\author{R.D.P.~Mano}
+\affiliation{LIBPhys, Physics Department, University of Coimbra, Coimbra, 3004-516, Portugal}
+%
+\author{J.~Mart\'in-Albo}
+\affiliation{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia, Paterna, E-46980, Spain}
+%
+\author{A.~Mart\'inez}
+\affiliation{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia, Paterna, E-46980, Spain}
+%
+\author{G.~Mart\'inez-Lema}
+\affiliation{Unit of Nuclear Engineering, Faculty of Engineering Sciences, Ben-Gurion University of the Negev, Beer-Sheva, 8410501, Israel}
+%
+\author{M.~Mart\'inez-Vara}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+\affiliation{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia, Paterna, E-46980, Spain}
+%
+\author{A.D.~McDonald}
+\affiliation{Department of Physics, University of Texas at Arlington, Arlington, TX 76019, USA}
+%
+\author{Z.E.~Meziani}
+\affiliation{Argonne National Laboratory, Argonne, IL 60439, USA}
+%
+\author{K.~Mistry}
+\affiliation{Department of Physics, University of Texas at Arlington, Arlington, TX 76019, USA}
+%
+\author{C.M.B.~Monteiro}
+\affiliation{LIBPhys, Physics Department, University of Coimbra, Coimbra, 3004-516, Portugal}
+%
+\author{F.J.~Mora}
+\affiliation{Instituto de Instrumentaci\'on para Imagen Molecular I3M (CSIC-UPV), Valencia, E-46022, Spain}
+%
+\author{J.~Mu\~noz Vidal}
+\affiliation{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia, Paterna, E-46980, Spain}
+%
+\author{K.~Navarro}
+\affiliation{Department of Physics, University of Texas at Arlington, Arlington, TX 76019, USA}
+%
+\author{P.~Novella}
+\affiliation{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia, Paterna, E-46980, Spain}
+%
+\author{D.R.~Nygren}
+\thanks{NEXT Co-spokesperson.}
+\affiliation{Department of Physics, University of Texas at Arlington, Arlington, TX 76019, USA}
+%
+\author{E.~Oblak}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{M.~Odriozola-Gimeno}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{B.~Palmeiro}
+\affiliation{Instituto Gallego de F\'isica de Altas Energ\'ias, Univ.\ de Santiago de Compostela, Campus sur, Santiago de Compostela, E-15782, Spain}
+\affiliation{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia, Paterna, E-46980, Spain}
+%
+\author{A.~Para}
+\affiliation{Fermi National Accelerator Laboratory, Batavia, IL 60510, USA}
+%
+\author{J.~P\'erez}
+\affiliation{Laboratorio Subterr\'aneo de Canfranc, Canfranc Estaci\'on, E-22880, Spain}
+%
+\author{M.~Querol}
+\affiliation{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia, Paterna, E-46980, Spain}
+%
+\author{A.~Raymond}
+\affiliation{Department of Physics, University of Texas at Arlington, Arlington, TX 76019, USA}
+%
+\author{A.B.~Redwine}
+\affiliation{Unit of Nuclear Engineering, Faculty of Engineering Sciences, Ben-Gurion University of the Negev, Beer-Sheva, 8410501, Israel}
+%
+\author{J.~Renner}
+\affiliation{Instituto Gallego de F\'isica de Altas Energ\'ias, Univ.\ de Santiago de Compostela, Campus sur, Santiago de Compostela, E-15782, Spain}
+%
+\author{L.~Ripoll}
+\affiliation{Escola Polit\`ecnica Superior, Universitat de Girona, Girona, E-17071, Spain}
+%
+\author{Y.~Rodr\'iguez Garc\'ia}
+\affiliation{Centro de Investigaci\'on en Ciencias B\'asicas y Aplicadas, Universidad Antonio Nari\~no, Sede Circunvalar, Bogot\'a, Colombia}
+%
+\author{J.~Rodr\'iguez}
+\affiliation{Instituto de Instrumentaci\'on para Imagen Molecular I3M (CSIC-UPV), Valencia, E-46022, Spain}
+%
+\author{L.~Rogers}
+\affiliation{Department of Physics, University of Texas at Arlington, Arlington, TX 76019, USA}
+%
+\author{B.~Romeo}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+\affiliation{Laboratorio Subterr\'aneo de Canfranc, Canfranc Estaci\'on, E-22880, Spain}
+%
+\author{C.~Romo-Luque}
+\affiliation{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia, Paterna, E-46980, Spain}
+%
+\author{F.P.~Santos}
+\affiliation{LIP, Department of Physics, University of Coimbra, Coimbra, 3004-516, Portugal}
+%
+\author{J.M.F. dos~Santos}
+\affiliation{LIBPhys, Physics Department, University of Coimbra, Coimbra, 3004-516, Portugal}
+%
+\author{A.~Sim\'on}
+\affiliation{Unit of Nuclear Engineering, Faculty of Engineering Sciences, Ben-Gurion University of the Negev, Beer-Sheva, 8410501, Israel}
+%
+\author{M.~Sorel}
+\affiliation{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia, Paterna, E-46980, Spain}
+%
+\author{C.~Stanford}
+\affiliation{Department of Physics, Harvard University, Cambridge, MA 02138, USA}
+%
+\author{J.M.R.~Teixeira}
+\affiliation{LIBPhys, Physics Department, University of Coimbra, Coimbra, 3004-516, Portugal}
+%
+\author{P.~Thapa}
+\affiliation{Department of Chemistry and Biochemistry, University of Texas at Arlington, Arlington, TX 76019, USA}
+%
+\author{J.F.~Toledo}
+\affiliation{Instituto de Instrumentaci\'on para Imagen Molecular I3M (CSIC-UPV), Valencia, E-46022, Spain}
+%
+\author{J.~Torrent}
+\affiliation{Donostia International Physics Center DIPC, San Sebasti\'an / Donostia, E-20018, Spain}
+%
+\author{A.~Us\'on}
+\affiliation{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia, Paterna, E-46980, Spain}
+%
+\author{J.F.C.A.~Veloso}
+\affiliation{Institute of Nanostructures, Nanomodelling and Nanofabrication (i3N), Universidade de Aveiro, Campus de Santiago, Aveiro, 3810-193, Portugal}
+%
+\author{T.T.~Vuong}
+\affiliation{Department of Chemistry and Biochemistry, University of Texas at Arlington, Arlington, TX 76019, USA}
+%
+\author{R.~Webb}
+\affiliation{Department of Physics and Astronomy, Texas A\&M University, College Station, TX 77843-4242, USA}
+%
+\author{J.T.~White}
+\thanks{Deceased.}
+\affiliation{Department of Physics and Astronomy, Texas A\&M University, College Station, TX 77843-4242, USA}
+%
+\author{K.~Woodruff}
+\affiliation{Department of Physics, University of Texas at Arlington, Arlington, TX 76019, USA}
+%
+\author{N.~Yahlali}
+\affiliation{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universitat de Val\`encia, Paterna, E-46980, Spain}
+%
   
   
 
 \begin{abstract}
 
-If neutrinos are their own antiparticles \cite{Majorana:1937}, the otherwise-forbidden nuclear reaction known as neutrinoless double beta decay (\bbonu) can occur, with a characteristic lifetime which is expected to be very long, making the suppression of backgrounds a daunting task. It has been shown that detecting (``tagging'') the \Bapp\ dication produced in the double beta decay ${}^{136}\mathrm{Xe} \rightarrow {}^{136}\Bapp + 2 e + (2 \nu)$ in a high pressure gas experiment, could lead to a virtually background free experiment \cite{Nygren_2015,Jones:2016qiq, McDonald:2017izm, rivilla_fluorescent_2020}. To identify these \Bapp, chemical sensors are being explored as key tool by the NEXT collaboration \cite{Thapa:2019zjk, rivilla_fluorescent_2020,thapa_demonstration_2021}. Although used in many fields, the application of such chemosensors to the field of particle physics is totally novel and requires experimental demonstration of their suitability in the ultra-dry environment of a xenon gas chamber. Here we use a  combination of complementary surface science techniques to unambiguously show that \Bapp\ ions can be trapped (chelated) in vacuum by a monolayer of the so-called fluorescent bicolour indicator (FBI) \cite{rivilla_fluorescent_2020}, one of the chemosensors developed by NEXT. We unravel the ion capture mechanism once the molecules are immobilised on a surface and explain the origin of the emission fluorescence shift associated to the trapping of different ions, thus demonstrating the feasibility of using FBI indicators as building blocks of a \Bapp\ detector.
+If neutrinos are their own antiparticles \cite{Majorana:1937}, the otherwise-forbidden nuclear reaction known as neutrinoless double beta decay (\bbonu) can occur, with a characteristic lifetime which is expected to be very long, making the suppression of backgrounds a daunting task. It has been shown that detecting (``tagging'') the \Bapp\ dication produced in the double beta decay ${}^{136}\mathrm{Xe} \rightarrow {}^{136}\Bapp + 2 e + (2 \nu)$ in a high pressure gas experiment, could lead to a virtually background free experiment \cite{Nygren_2015,Jones:2016qiq, McDonald:2017izm, rivilla_fluorescent_2020}. To identify these \Bapp, chemical sensors are being explored as key tool by the NEXT collaboration \cite{Thapa:2019zjk, rivilla_fluorescent_2020,thapa_demonstration_2021}. Although used in many fields, the application of such chemosensors to the field of particle physics is totally novel and requires experimental demonstration of their suitability in the ultra-dry environment of a xenon gas chamber. Here we use a combination of complementary surface science techniques to unambiguously show that \Bapp\ ions can be trapped (chelated) in vacuum by an organic molecule, the so-called fluorescent bicolour indicator (FBI) \cite{rivilla_fluorescent_2020} (one of the chemosensors developed by NEXT), immobilized on a surface. We unravel the ion capture mechanism once the molecules are immobilised on Au(111) surface and explain the origin of the emission fluorescence shift associated to the trapping of different ions. Moreover, we probe that chelation also takes place on a technologically relevant substrate, such as, demonstrating the feasibility of using FBI indicators as building blocks of a \Bapp\ detector.
 
 \end{abstract}
 %with experimental lower bounds in excess of $10^{26}$ years for some of the decaying isotopes such as \XE\ and \GE\ \cite{Gando:2016ji, Agostini:2018tnm}
@@ -151,12 +471,12 @@ The decay mode with two neutrinos, \bbtnu, has been observed in xenon with a lif
 In the TPC, the electric field which drifts the two emitted electrons towards the detector anode, will cause the \Bapp\ dication to drift towards the cathode \cite{Bainglass:2018odn}. Thus, it is feasible to trigger on interesting events (e.g, those with sufficiently high energy). If gas circulation and eddy currents can be controlled at the 1cm/s level, the barycenter of the electron tracks can be used to predict the impact position of the ion, or alternatively, focusing devices, known as RF carpets could be used to direct the ion to a specific region in the cathode \cite{NEXT:2021idl}. Furthermore, it is possible to correlate the arrival time of the dication to the cathode with the electrons detected in the anode. Such coincidence could lead to a virtually background free experiment. 
 
 
-Although the barium tagging concept was proposed more than three decades ago \cite{Moe:1991ik}, a practical way to detect \Bapp\ {\it in situ} in a HPXe-TPC was only conceived recently \cite{Nygren_2015, Jones:2016qiq}. The idea relies on the capability of fluorescent molecules of changing their optical properties upon detecting target analytes \cite{valeur_chemical,wolfbeis_materials_2005}. An initial proof of concept \cite{McDonald:2017izm} resolved individual \Bapp\ dications in aqueous solution using Fluo-3, a well known commercial indicator. Notice, however, that a suitable barium detector in NEXT requires a functionalised surface that must include a monolayer of the molecular sensor and must efficiently operate in a noble gas atmosphere. Over the last three years an intense R\&D program to develop chemosensors able to form a supramolecular complex with \Bapp\ in dry medium has been carried out \cite{Thapa:2019zjk, rivilla_fluorescent_2020,thapa_demonstration_2021}. However, up to date, no experiments have been conducted in which the processes of chelation and detection occurs fully under such conditions.
+Although the barium tagging concept was proposed more than three decades ago \cite{Moe:1991ik}, a practical way to detect \Bapp\ {\it in situ} in a HPXe-TPC was only conceived recently \cite{Nygren_2015, Jones:2016qiq}. The idea relies on the capability of fluorescent molecules of changing their optical properties upon detecting target analytes \cite{valeur_chemical,wolfbeis_materials_2005}. An initial proof of concept \cite{McDonald:2017izm} resolved individual \Bapp\ dications in aqueous solution using Fluo-3, a well known commercial indicator. A suitable barium detector in NEXT requires a functionalised surface that must include a monolayer of the molecular sensor and must efficiently operate in a noble gas atmosphere. Over the last three years an intense R\&D program to develop chemosensors able to form a supramolecular complex with \Bapp\ in dry medium has been carried out \cite{Thapa:2019zjk, rivilla_fluorescent_2020,thapa_demonstration_2021}. To date, no experiments have been conducted in which the processes of chelation and detection occurs fully under such conditions.
 
 One of the sensors developed by NEXT, the so-called
 Fluorescent Bicolor Indicator (FBI) \cite{rivilla_fluorescent_2020} combines an enhanced fluorescence with a shift of the emission spectrum (about 61 nm towards the blue) when the indicator is complexed with \Bapp.  This is due to the specific molecular design of the fluorescent indicator having a crown ether connected to a benzo[\textit{a}]imidazo[5,1,2-\textit{cd}]indolizine fluorophore by a phenyl group. The benzoimidazoindolizine group has been shown to have highly tunable bright emission \cite{Stasyuk_benzo,Levesque_general} while the crown ether is capable of interacting with \Bapp\ ions \cite{valeur_chemical,maleknia_cavity-size-dependent_2002}. In the presence of a \Bapp\ ion, calculations predict that coordination happens between the cation, one nitrogen atom of the fluorophore, the crown ether and the para-substituted phenyl ring, causing a  {torsion-induced decoupling between non-coplanar components of the fluorophore with respect} to the non-chelated molecule. This induces a large change in the electronic properties of the dye, causing a blue-shift in emission, which can be used to filter the signal of chelated indicators.
 
-In this paper we combine two highly sensitive surface techniques: X-ray Photoemission Spectroscopy (XPS) and Scanning Tunnelling Microscopy and Spectroscopy (STM/STS), to prove how different ions interact with FBI molecules deposited on suitable substrates. We demonstrate that only \Bapp\ ions induce molecular structural changes, modifying the electronic structure and therefore affecting the fluorescence emission. Coordination with crown-ether happens entirely in ultra-high vacuum (UHV) (see lower panel of figure {\ref{ModeloFBI}}), which ensures that chemical, structural and electronic changes happen in the absence of solvents, air molecules or spurious contaminants. This is, therefore, a crucial step toward the development of a \Bapp\ detector. 
+In this paper we combine two highly sensitive surface techniques: X-ray Photoemission Spectroscopy (XPS) and Scanning Tunnelling Microscopy and Spectroscopy (STM/STS), to prove how different ions interact with FBI molecules deposited on suitable substrates. We demonstrate that only \Bapp\ ions induce molecular structural changes, modifying the electronic structure in ways that would affect the fluorescence emission at suitable surfaces. Coordination with crown-ether happens entirely in ultra-high vacuum (UHV) (see lower panel of figure {\ref{ModeloFBI}}), which ensures that chemical, structural and electronic changes happen in the absence of solvents, air molecules or spurious contaminants. This is, therefore, a crucial step toward the development of a \Bapp\ detector. 
 
 All the indicators developed by the NEXT experiment are based on crown ethers. Because of their capability to capture a variety of guest species, including metal cations, protonated species and neutral and ionic molecules \cite{dobler1981ionophores}, crown ethers \cite{gokel_crown_1991} have been extensively used to recognise and trap metal or molecular ions \cite{more_intrinsic_1999}, \cite{maleknia_cavity-size-dependent_2002}. However, they have been poorly studied in solid state. Few examples can be found in the literature where self-assembled monolayers of crown ether derivatives have been grown and used on surfaces. Moreover, in all previous studies, either the growth or ion trapping or both have taken place in solution \cite{yoshimoto_hostguest_2003}, \cite{flink_recognition_1999}, \cite{inokuchi_new_2015}. 
  There are only two works, as far as we know, where crown ethers were deposited under UHV conditions \cite{feng_growth_2018} and their metal trapping capability was proven also under UHV \cite{stredansky_-surface_2019}. Thus, in addition to the progress relevant for a future \bbonu\ experiment, the work presented here advances substantially the understanding of the physico-chemical properties of crown ethers immobilised on solid surfaces. 
@@ -165,14 +485,14 @@ All the indicators developed by the NEXT experiment are based on crown ethers. B
  \begin{figure*}[ht!]
 	\includegraphics[width=0.9\textwidth]{figures/figura_1a.jpg}
 	\caption{\label{ModeloFBI} 
-    Model of the FBI molecules before and after chelation and schematic representation of the experiment we have carried out: FBI molecules were sublimated on a surface, chelated in-situ and characterized inside the UHV chamber.}
+    Model of the FBI molecules before and after chelation and schematic representation of the experiment we have carried out: FBI molecules were sublimated on a Au(111) surface, chelated in-situ and characterized inside the UHV chamber.}
 \end{figure*}  
 
 %\section{Results and discussion}
 
 \section{Molecular sublimation in vacuum}
 
-In order to characterize the ion trapping capability of the FBI molecules, first it is mandatory to deposit these FBI molecules on a surface by sublimation in UHV and characterize them structural and chemically. Thus, we chose a gold substrate, the Au(111) face (single crystal cut to present (111) close-packed planes parallel to the surface), because it is a well known noble metal surface where very low substrate-molecule interaction was expected. To determine their chemical composition, we used XPS. It is worth mentioning that, since XPS sensitivity is limited to the last few nanometers, molecular coverages below 1 monolayer (ML) were always used in this study to ensure access to the substrate core levels for calibration. 
+In order to characterize the ion trapping capability of the FBI molecules, first it is mandatory to deposit these FBI molecules on a surface by sublimation in UHV and characterize them structural and chemically. Thus, we chose a gold substrate, the Au(111) face (single crystal cut to present (111) close-packed planes parallel to the surface), because it is a well known noble metal surface where very low substrate-molecule interaction was expected. To determine their chemical composition, we used XPS. It is worth mentioning that, since XPS sensitivity is limited to the last few nanometers, molecular coverage below 1 monolayer (ML) were always used in this study to ensure access to the substrate core levels for calibration. 
 
 Figure {\ref{XPS_FBI_Au}}a shows the XPS spectra of the three molecular core levels of FBI, i.e. O 1s, N 1s and C 1s. The spectra were measured for 0.6 ML deposited on Au(111) at room temperature (RT). The C 1s core level can be fitted using two components, one {centered} at around 284.7 eV and a second and more intense one at 286.3 eV. The former component corresponds to C-C bonds whereas the component at higher binding energy (B.E.) includes contributions from C-O and C-N bonds, with their relative intensities in agreement with having intact molecules. In the N 1s region, around 400.4 eV, a faint peak is visible. The position of the maximum is compatible with the {enamine-imine} groups of the molecular composition. Finally, the O 1s core level presents a single component peak centered at 533.0 eV, which is compatible with previous reports on closely related crown ether groups\cite{stredansky_-surface_2019}. The ratios between the core levels, C/O = 6.2, C/N = 10.3, are in agreement with having molecules of $ \mathrm{C_{31}N_{3}O_{5}H_{35}}$ stoichiometry on the surface. 
 
@@ -222,12 +542,10 @@ In order to visualize the aforementioned structural changes undergone by the FBI
     \label{tab:bandgaps}
 \end{table}
 
-As we mentioned before, the distortion of the molecule upon metal coordination has an important impact on the fluorescence response. The lowest fluorescence emission peak of the non-chelated FBI molecule comes from the de-exaction of electrons from the Lowest Unoccupied Molecular Orbital (LUMO) to the Highest Occupied Molecular Orbital (HOMO). The torsion of the phenyl group decreases the effective conjugation, thus increases the symmetry allowed $\pi \rightarrow \pi^*$ gap, resulting in an increase of the HOMO-LUMO gap, and therefore introducing a blue shift of the fluorescent emission. 
-
-Unfortunately, because of the metallic character of the surfaces we can not measure the fluorescence emission (the excitation energy is dumped to the metal without further emission). Alternatively, to probe the blue fluorescence shift we use scanning tunneling spectroscopy (STS) that scan the local density of states of the system. In this way, it is possible to detect the changes in the HOMO-LUMO gap which are associated with the changes in the fluorescence emission measured in solution. Figure {\ref{Fig_STS}e} shows the associated STS spectroscopy measured for the three molecules. The FBI molecule deposited on Au(111) has an HOMO-LUMO gap of 3.0 eV. Complexation with \Nap\ did not considerably change this band gap, while complexation with \Bapp increased it to 3.6 eV. The absence of substantial frontier molecular orbital gap upon complexation with \Nap\ is in line with other dyes containing the same crown ether, whose emission profiles do not change upon \Nap\ complexation\cite{ast_high_2011} and it is supported by the fact that no chage in the molecular conformation do not alter the molecular emission. Meanwhile, the conformational change upon complexation with \Bapp causes a decrease in the extent of $\pi$-conjugation, which no longer extends into the phenyl ring linking the fluorophore and the crown, consequently increasing the bandgap.  The measured HOMO-LUMO gap values are in agreement with the $\lambda^{emi}_{max}$ spectra measured in solution, as it is summarized in Table \ref{tab:bandgaps}. The three molecules presents similar $\lambda^{ads}_{max}$ associated to the transition of electrons from HOMO to the LUMO+n states, while the fluorescence emmision, associated to the LUMO to HOMO transition is comparable for non-chelated and \Nap-chelated molecules and shifted by 0.36 eV photon energy (489$\rightarrow$428 nm) for \Bapp\ chelated molecules.
+As we mentioned before, the distortion of the molecule upon metal coordination has an important impact on the fluorescence response. The lowest fluorescence emission peak of the non-chelated FBI molecule comes from the de-exaction of electrons from the Lowest Unoccupied Molecular Orbital (LUMO) to the Highest Occupied Molecular Orbital (HOMO). The torsion of the phenyl group decreases the effective conjugation, thus increases the symmetry allowed $\pi \rightarrow \pi^*$ gap, resulting in an increase of the HOMO-LUMO gap, and therefore introducing a blue shift of the fluorescent emission. In order to check that, we use scanning tunneling spectroscopy (STS) that scan the local density of states of the system. In this way, it is possible to detect the changes in the HOMO-LUMO gap which are associated with the changes in the fluorescence emission measured in solution. Figure {\ref{Fig_STS}e} shows the associated STS spectroscopy measured for the three molecules. The FBI molecule deposited on Au(111) has an HOMO-LUMO gap of 3.0 eV. Complexation with \Nap\ did not considerably change this band gap, while complexation with \Bapp increased it to 3.6 eV. The absence of substantial frontier molecular orbital gap upon complexation with \Nap\ is in line with other dyes containing the same crown ether, whose emission profiles do not change upon \Nap\ complexation\cite{ast_high_2011} and it is supported by the fact that no chage in the molecular conformation do not alter the molecular emission. Meanwhile, the conformational change upon complexation with \Bapp causes a decrease in the extent of $\pi$-conjugation, which no longer extends into the phenyl ring linking the fluorophore and the crown, consequently increasing the bandgap.  The measured HOMO-LUMO gap values are in agreement with the $\lambda^{emi}_{max}$ spectra measured in solution, as it is summarized in Table \ref{tab:bandgaps}. The three molecules presents similar $\lambda^{ads}_{max}$ associated to the transition of electrons from HOMO to the LUMO+n states, while the fluorescence emmision, associated to the LUMO to HOMO transition is comparable for non-chelated and \Nap-chelated molecules and shifted by 0.36 eV photon energy (489$\rightarrow$428 nm) for \Bapp\ chelated molecules. Unfortunately, because of the metallic character of the substrate we can not measure the fluorescence emission (the excitation energy is dumped to the metal without further emission). 
 
 
-\section{Chelation independent of the surface support}
+\section{Chelation tested on different surface support}
 
 
 \begin{figure*}[ht!]
@@ -236,13 +554,13 @@ Unfortunately, because of the metallic character of the surfaces we can not meas
     O 1s core level evolution upon chelation measured on two submonolayer FBI-functionalized surfaces: (a) chelation on Cu(111) sublimating \BappCl and NaCl (inset); (b) chelation on ITO. For this substrate, the substrate component (${O_{ITO}}$) was substrates to emphasize the O 1s contribution coming from FBI (${O_{FBI}}$). The entire spectra are shown inserted in (b). Dot spectra correspond to raw values and solid lines to fitted curves.}
 \end{figure*} 
 
-Finally, we have also tested that chelation takes place also on other conductive surfaces --unfortunately, XPS and STM cannot be combine to study insulators, which, on the other hand, are of limited interest for a \Bapp\ target, which needs a well defined potential, better achieved with a conductor---. In particular, we have studied Cu(111) and ITO. We chose Cu(111) because it is a more reactive substrate. This enabled us to study whether the molecule-substrate interaction could alter the chelation response. On the other hand, ITO was selected as a promising candidate for the potential implementation of a barium tagging detector on a xenon-based TPC \cite{rivilla_fluorescent_2020}. ITO is transparent, which would allow the direct detection of fluorescence in transmission. Furthermore, its conductivity is high enough to guide the \Bapp\ ions towards the sensor surface facilitating their capture by FBI. 
+Finally, we have also tested that chelation takes place also on other surfaces, in particular Cu(111) and ITO. We chose Cu(111) because it is a more reactive substrate. This enabled us to study whether the molecule-substrate interaction could alter the chelation response. On the other hand, ITO was selected as a promising candidate for the potential implementation of a barium tagging detector on a xenon-based TPC \cite{rivilla_fluorescent_2020}. As degenerated semiconductor, ITO is transparent, which would allow the direct detection of fluorescence in transmission. Furthermore, its conductivity is high enough to guide the \Bapp\ ions towards the sensor surface facilitating their capture by FBI, but potentially low enough to avoid the fluorescence the quenching that is expected at conductive surfaces.
 
 As previously discussed, the O 1s shift is a fingerprint of chelation. Figure \ref{XPS_FBI_Cu_ITO} shows the O 1s core level of FBI on Cu(111) and ITO. In both cases, upon chelation with \Bapp\ ($\phi = 10$ for 0.6 ML of FBI on Cu(111) and $\phi = 17.5$ for 0.7 ML of FBI on ITO) we observed the chemical shift on the O 1s towards higher B.E., indicating that chelation is happening. In the case of Cu(111), the shift is of about 0.7 eV, while for ITO is around 0.9 eV. As far as ion capture is concerned, FBI chelation of \Nap\  on Cu(111) was also tested and, again, O 1s shows the expected upwards shift associated with chelation (inset in Figure \ref{XPS_FBI_Cu_ITO}). These results ensure that chelation is independent from the choice of substrate.
 
 The exact values of the O 1s core level shift are different for the three samples. In photoemission, the absolute core level shift values depends on many factors such as the substrate, the molecular coverage, the presence of defects or other molecules... Therefore, what is important here is that the direction of the shifts is the same in the three cases, and that the magnitude of the shift is similar. 
 
-Notice that in the case of Cu(111), when FBI-functionalised surface is exposed to \BappCl, the residual contamination partially oxidized the surface. For this reason, the core level has a smaller component at lower B.E., around 531 eV, associated to  Cu$_2$O \cite{zhu_surface_2013}. Moreover, because of the presence of oxygen in the ITO structure, the analysis of the O 1s core level shifts required a subtraction of the core level measured on the bare ITO to enhance the FBI and \Bapp\ chelated FBI contributions. The result of the subtraction is shown in figure \ref{XPS_FBI_Cu_ITO} b), and the inset gathers the original normalized spectra, including the contribution to the  O 1s coming from the ITO.  
+Notice that in the case of Cu(111), when FBI-functionalized surface is exposed to \BappCl, the residual contamination partially oxidized the surface. For this reason, the core level has a smaller component at lower B.E., around 531 eV, associated to  Cu$_2$O \cite{zhu_surface_2013}. Moreover, because of the presence of oxygen in the ITO structure, the analysis of the O 1s core level shifts required a subtraction of the core level measured on the bare ITO to enhance the FBI and \Bapp\ chelated FBI contributions. The result of the subtraction is shown in figure \ref{XPS_FBI_Cu_ITO} b), and the inset gathers the original normalized spectra, including the contribution to the  O 1s coming from the ITO.  
 
 
 \section{Conclusions}
@@ -289,7 +607,10 @@ The spectra fitting was performed using custom-made software written in Python, 
 
 
 \section{Acknowledgment}
-We acknowledge support from the following agencies and institutions: European Research Council (ERC) under ERC-2020-SyG 951281; Grants PID2020-114252GB-I00, PID2019-107338RB-C63, PID2019-104772GB-I00, PID2019-111281GB-I00 funded by MCIN/AEI/10.13039/501100011033; and RTI2018-095979-B-C41; the Severo Ochoa Program grant CEX2018-000867-S; the Basque Government (GV/EJ) under grants IT-1346-19 and IT-1180-19. 
+This material is based upon work supported by the following agencies and institutions: the European Research Council (ERC) under ERC-2020-SyG 951281; the MCIN/AEI/10.13039/501100011033 of Spain and ERDF A way of making Europe under grants PID2020-114252GB-I00, PID2019-107338RB-C63, PID2019-104772GB-I00, PID2019-111281GB-I00 and RTI2018-095979, the Severo Ochoa Program grant CEX2018-000867-S; the Basque Government (GV/EJ) under grants IT-1346-19 and IT-1180-19. 
+
+The NEXT Collaboration also acknowledges support from the following agencies and institutions: the European Union's Framework Programme for Research and Innovation Horizon 2020 (2014--2020) under Grant Agreement No.\ 957202-HIDDEN; the MCIN/AEI/10.13039/501100011033 of Spain under the Severo Ochoa Program grant CEX2018-000867-S and the Mar\'ia de Maeztu Program grant MDM-2016-0692; the Generalitat Valenciana of Spain under grants PROMETEO/2021/087 and CIDEGENT/2019/049; the Portuguese FCT under project UID/FIS/04559/2020 to fund the activities of LIBPhys-UC; the Pazy Foundation (Israel) under grants 877040 and 877041; the US Department of Energy under contracts number DE-AC02-06CH11357 (Argonne National Laboratory), DE-AC02-07CH11359 (Fermi National Accelerator Laboratory), DE-FG02-13ER42020 (Texas A\&M), DE-SC0019054 (Texas Arlington) and DE-SC0019223 (Texas Arlington); the US National Science Foundation under award number NSF CHE 2004111; the Robert A Welch Foundation under award number Y-2031-20200401. DGD acknowledges support from the Ram\'on y Cajal program (Spain) under contract number RYC-2015-18820. Finally, we are grateful to the Laboratorio Subterr\'aneo de Canfranc for hosting and supporting the NEXT experiment.
+
 
 \section{Author contributions}
 J.J.G.-C., F.P.C. and C.R. conceived the project. C.R. designed and coordinated the experiments and data analysis. P.H.G. and M.I. performed and analysed the XPS experiments. J.P.C., A.B.L., T.W., D.G.O. and M.C. performed the STM experiments. I.R., B.A., A.A. and Z.F. carried out the chemical synthesis. R.G.M. I.R., B.A., A.A. and Z.F. performed the characterisation in solution of fluorescence studies. P.H.G., J.P.C., J.J.G.-C., F.P.C., and C.R. wrote the manuscript. The NEXT collaboration assisted with edition and revision of the manuscript. 
